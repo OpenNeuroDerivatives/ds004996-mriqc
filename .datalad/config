@@ -1,2 +1,5 @@
 [datalad "dataset"]
 	id = 02a42ed0-b57d-4113-a921-2ff57a5bd248
+[datalad "containers.bids-mriqc"]
+	image = code/containers/images/bids/bids-mriqc--24.0.2.sif
+	cmdexec = {img_dspath}/code/containers/scripts/singularity_cmd run {img} --no-datalad-get {cmd}
